@@ -6,7 +6,7 @@ data = {
     'latitude': [37.7749, 34.0522, 40.7128],
     'longitude': [-122.4194, -118.2437, -74.0060],
 }
-df = pd.DataFrame(data)
+df = pd.read_excel('xy.xlsx')
 
 # Display the map with the DataFrame
 st.map(df, use_container_width=True)
