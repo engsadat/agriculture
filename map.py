@@ -2,6 +2,8 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
-df = pd.read_excel('2024-08-03_xy_wadiAbha_correct.xlsx')
+df = pd.DataFrame(
+    np.random.randn(1000, 2) / [50, 50] + [37.76, -122.4],
+    columns=['lat', 'lon'])
 
 st.map(df)
