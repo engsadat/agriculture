@@ -1,8 +1,12 @@
-import streamlit as st
 import pandas as pd
-import numpy as np
+import streamlit as st
 
+# Sample data
+data = {
+    'latitude': [37.7749, 34.0522, 40.7128],
+    'longitude': [-122.4194, -118.2437, -74.0060],
+}
+df = pd.DataFrame(data)
 
-df = pd.read_excel('xy.xlsx')
-
-st.map(latitude=latitude, longitude = longitude, use_container_width=True)
+# Display the map with the DataFrame
+st.map(df, use_container_width=True)
