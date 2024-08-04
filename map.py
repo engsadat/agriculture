@@ -1,6 +1,8 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
+import openpyxl
+
 
 df = pd.read_excel('2024-08-03_xy_wadiAbha_correct.xlsx')
 
